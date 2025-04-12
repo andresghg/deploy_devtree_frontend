@@ -82,9 +82,7 @@ export default function ProfileView() {
                 <textarea
                     className="border-none bg-slate-100 rounded-lg p-2"
                     placeholder="Tu Descripción"
-                    {...register('description', {
-                        required: "La Descripción es obligatoria"
-                    })}
+                    {...register('description')}
                 />
 
                 {errors.description && <ErrorMessage>{errors.description.message}</ErrorMessage>}
